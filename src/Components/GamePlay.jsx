@@ -17,7 +17,7 @@ const GamePlay = () => {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
-  const rollDice = () => {
+  const rolDice = () => {
     if (!selectedNumber) {
       setError("You have not selected any number!!");
       return;
@@ -50,7 +50,7 @@ const GamePlay = () => {
           setSelectedNumber={setSelectedNumber}
         />
       </div>
-      <RollDice currentDice={currentDice} rollDice={rollDice} />
+      <RollDice currentDice={currentDice} rolDice={rolDice} />
       <div className="btns">
         <OutLinedButton onClick={resetScore}>Reset Score</OutLinedButton>
         <Button onClick={() => setShowRules((prev) => !prev)}>
